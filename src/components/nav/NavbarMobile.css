@@ -1,0 +1,71 @@
+.cardNavbarMobile {
+    width: 200px;
+    /* background-color: rgba(36, 40, 50, 1);
+  background-image: linear-gradient(135deg, rgba(36, 40, 50, 1) 0%, rgba(36, 40, 50, 1) 40%, rgba(37, 28, 40, 1) 100%); */
+  
+    /* background-color: var(--color-background); */
+    /* background-image: linear-gradient(
+      139deg,
+      rgba(36, 40, 50, 1) 0%,
+      rgba(36, 40, 50, 1) 0%,
+      rgba(37, 28, 40, 1) 100%
+    ); */
+  
+    border-radius: 0px 0px 0px 10px;
+    padding: 15px 0px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cardNavbarMobile .list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 10px;
+  }
+  
+  .cardNavbarMobile .list .element {
+    display: flex;
+    align-items: center;
+    color: #7e8590;
+    gap: 10px;
+    transition: all 0.3s ease-out;
+    padding: 4px 7px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .cardNavbarMobile .list .element svg {
+    width: 19px;
+    height: 19px;
+    transition: all 0.3s ease-out;
+  }
+  
+  .cardNavbarMobile .list .element .label {
+    font-weight: 600;
+  }
+  
+  .cardNavbarMobile .list .element:hover {
+    background-color: #5353ff;
+    color: #ffffff;
+    transform: translate(1px, -1px);
+  }
+  .cardNavbarMobile .list .delete:hover {
+    background-color: #8e2a2a;
+  }
+  
+  .cardNavbarMobile .list .element:active {
+    transform: scale(0.99);
+  }
+  
+  
+  .cardNavbarMobile .list:last-child .element {
+    color: var(--color-background-card);
+  }
+  
+  .cardNavbarMobile .list:last-child .element:hover {
+    background-color: #cabea7;
+    color: black;
+  }
+  

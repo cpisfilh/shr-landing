@@ -1,0 +1,25 @@
+/* From Uiverse.io by zebra76966 */ 
+.card {
+    /* background: var(--color-background-card); */
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .card button {
+    background-color: transparent;
+    width: 50px;
+    padding: 7px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: scale 0.3s ease;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  
+  

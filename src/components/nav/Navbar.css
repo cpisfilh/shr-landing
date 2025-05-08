@@ -1,0 +1,46 @@
+/* From Uiverse.io by biswacpcode */
+.btnNav {
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-weight: bold;
+}
+
+.btnNav:hover {
+  cursor: pointer;
+}
+
+.btnNav::before {
+  margin-left: auto;
+}
+
+.btnNav::after,
+.btnNav::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #FFF0D1;
+  display: block;
+  transition: 0.5s;
+}
+
+.btnNav:hover::after,
+.btnNav:hover::before {
+  width: 100%;
+}
+
+.navbarMobileContainer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 90px;
+  right: 0.1px;
+  z-index: 1;
+}
+
+.peer:checked ~ .navbarMobileContainer {
+  max-height: 500px; /* ajusta según el contenido */
+}

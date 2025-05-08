@@ -1,0 +1,64 @@
+.buttonBanner {
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: var(--color-background-card);
+    --tooltip-color: #fff;
+    width: 200px;
+    height: var(--height);
+    /* background: var(--button-color); */
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    transition: background 0.3s;
+    box-shadow: inset 2px 2px 2px #7d7c7e, inset -2px -2px 2px 
+  }
+
+.buttonBanner:hover {
+    cursor: pointer;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .buttonBanner-wrapper,.text,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  
+  .text {
+    top: 0;
+    font-weight: bold;
+  }
+  
+  .text,.icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .buttonBanner:hover .text {
+    top: -100%;
+  }
+  
+  .buttonBanner:hover .icon {
+    top: 0;
+  }
+  

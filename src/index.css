@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --color-background: #3B3130;
+  --color-background-card: #FFF0D1;
+  --color-text: #FFF0D1;
+  --color-gold: #d4af37;
+  --color-gold-light: #f39d26;
+  --color-brown-dark: #3b3b3b;
+  --color-gray-decor: #888888;
+  --color-gold-border: #a67c00;
+
+  --font-title: 'Playfair Display', serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
