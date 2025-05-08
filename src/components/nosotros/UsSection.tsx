@@ -17,7 +17,7 @@ const UsSection = () => {
             <div className='lg:w-1/2'>
                 <div className='flex flex-col  gap-5'>
                     <div className='flex justify-end'>
-                        <img className=" w-[480px] saturate-150" src="/img/valledoradonosotros.jpg" alt="GoldenEvent" />
+                        <img className=" w-[480px] saturate-150" src="/img/valledoradonosotros.webp" alt="GoldenEvent" />
                     </div>
                 </div>
             </div>

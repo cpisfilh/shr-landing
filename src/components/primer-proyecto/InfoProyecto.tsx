@@ -6,7 +6,7 @@ const InfoProyecto = () => {
             <div className='md:w-1/2'>
                 <div className='flex flex-col  gap-5'>
                     <div className='flex justify-center'>
-                        <img className="w-[500px]" src="/img/logo_valledorado.png" alt="GoldenEvent" />
+                        <img className="w-[500px]" src="/img/logo_valledorado.webp" alt="GoldenEvent" />
                     </div>
                 </div>
             </div>
