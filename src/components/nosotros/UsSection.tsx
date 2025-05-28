@@ -2,7 +2,7 @@ import ButtonBanner from "../util/ButtonBanner"
 
 const UsSection = () => {
     return (
-        <div className="bg-[#3B3130]  flex flex-col gap-5 lg:flex-row items-center px-5 py-[60px] lg:px-20">
+        <div id="nosotros" className="bg-[#3B3130]  flex flex-col gap-5 lg:flex-row items-center px-5 py-[60px] lg:px-20">
             <div className='lg:w-1/2'>
                 <h1 className="text-4xl text-center lg:text-left font-bold ">Conoce nuestra historia</h1>
                 <br />

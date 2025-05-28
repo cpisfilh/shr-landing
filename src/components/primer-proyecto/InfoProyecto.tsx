@@ -2,7 +2,7 @@ import ButtonBanner from "../util/ButtonBanner"
 
 const InfoProyecto = () => {
     return (
-        <div id="proyecto" className=" bg-white text-[#3B3130] flex flex-col md:flex-row items-center px-5 py-[60px] md:px-20">
+        <div className=" bg-white text-[#3B3130] flex flex-col md:flex-row items-center px-5 py-[60px] md:px-20">
             <div className='md:w-1/2'>
                 <div className='flex flex-col  gap-5'>
                     <div className='flex justify-center'>
