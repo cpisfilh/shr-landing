@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Logo y descripción */}
         <div className="col-span-1">
           <img
-            src="/img/shr_logo.png"
+            src="/img/shr_logo.webp"
             alt="Logo"
             className="w-40 mx-auto saturate-50"
           />

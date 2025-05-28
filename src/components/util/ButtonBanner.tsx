@@ -7,11 +7,37 @@ type Props = {
   buttonColor?: string;
 };
 
-const ButtonBanner = ({ texto, textColor = "#000000", iconColor = "#000000", buttonColor = "#FFF0D1" }: Props) => {
+// Función sencilla para validar contraste (simplificada)
+function isContrastAcceptable(bgColor: string, textColor: string): boolean {
+  // Aquí podrías usar librerías para hacer el cálculo exacto, o hardcodear algunos pares
+  // Ejemplo simple: si fondo oscuro, texto claro
+  // Esto es solo para darte una idea
+  const darkBg = ['#226752', 'rgb(34, 103, 82)']; // verde oscuro
+  const lightText = ['#FFFFFF', '#FFF', '#FFF0D1', 'rgb(255,255,255)'];
+
+  if (darkBg.includes(bgColor) && lightText.includes(textColor)) return true;
+  if (!darkBg.includes(bgColor) && !lightText.includes(textColor)) return true;
+  return false;
+}
+
+const ButtonBanner = ({
+  texto,
+  textColor = "#000000",
+  iconColor = "#000000",
+  buttonColor = "#FFF0D1",
+}: Props) => {
+  // Por ejemplo, si el contraste no es bueno, forzamos un color que sí sea legible
+  let finalTextColor = textColor;
+  if (!isContrastAcceptable(buttonColor, textColor)) {
+    finalTextColor = '#000000'; // negro por defecto si el contraste no es adecuado
+  }
+
   return (
-    <div className={`buttonBanner`} style={{ backgroundColor: buttonColor }}>
+    <div className="buttonBanner" style={{ backgroundColor: buttonColor }}>
       <div className="buttonBanner-wrapper">
-        <div className="text" style={{ color: textColor }}>{texto}</div>
+        <div className="text" style={{ color: finalTextColor }}>
+          {texto}
+        </div>
         <span className="icon">
           <svg
             viewBox="0 0 24 24"

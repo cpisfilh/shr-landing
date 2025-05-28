@@ -16,7 +16,7 @@ const Navbar = () => {
       {/* <div className="logo">GoldenEvent</div> */}
       <img
         className="logo saturate-50 w-24"
-        src="/img/shr_logo.png"
+        src="/img/shr_logo.webp"
         alt="GoldenEvent"
       />
       <div className="gap-10 md:flex hidden">

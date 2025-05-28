@@ -18,7 +18,7 @@ const InfoProyecto = () => {
                 <p className="text-lg font-semibold text-center md:text-left">Contará con Pórtico de Ingreso, Parques y áreas verdes, zona de parrillas, agua potable, cancha de futbol y mucho mas...</p>
                 <br />
                 <div className='flex justify-center md:justify-start'>
-                <ButtonBanner texto="Consultar por proyecto" textColor="#f3bd58" buttonColor="#226752" iconColor="#f3bd58" />
+                <ButtonBanner texto="Consultar por proyecto" textColor="#FFF" buttonColor="#226752" iconColor="#f3bd58" />
                 </div>
             </div>
             
