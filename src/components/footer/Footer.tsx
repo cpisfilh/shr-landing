@@ -20,7 +20,7 @@ const Footer = () => {
         {/* Columna 1 */}
 
         <div>
-          <h4 className="font-extrabold mb-2">Información</h4>
+          <p className="font-extrabold mb-2">Información</p>
           <ul className="space-y-1">
             <li>
               <p className="text-white">Ruc: 20613505823</p>
@@ -33,7 +33,7 @@ const Footer = () => {
 
         {/* Columna 2 */}
         <div>
-          <h4 className="font-extrabold  mb-2">Enlaces</h4>
+          <p className="font-extrabold  mb-2">Enlaces</p>
           <ul className="space-y-1">
             <li>
               <button onClick={()=>handleScrollToElement("nosotros")} className="hover:underline hover:cursor-pointer text-white">
@@ -55,7 +55,7 @@ const Footer = () => {
 
         {/* Columna 3 */}
         <div>
-          <h4 className="font-extrabold  mb-2">Contáctanos</h4>
+          <p className="font-extrabold  mb-2">Contáctanos</p>
           <ul className="space-y-1">
             <li>
               <p className="text-white">
